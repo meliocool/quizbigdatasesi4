@@ -91,5 +91,12 @@ Lakukan langkah ini untuk semua tabel yang diperlukan.
 
 ---
 
+## 🧐 8. Check Apakah Data sudah masuk ke Tabel
+
+Gunakan command seperti ini
+
+```sql
+SELECT * FROM msstore;
+```
 
 
