@@ -1,4 +1,4 @@
-# 🚀 Panduan Memindahkan dan Memproses Data di Cloudera
+# 🚀 PREPARATION QUIZ SESSION 4 BIG DATA PROCESSING
 
 ## 📂 1. Pindahkan File `.csv` dan `.sql` ke Cloudera Desktop
 
@@ -17,7 +17,7 @@ ls           # Lihat isi file di Desktop
 
 ## 📤 3. Pindahkan File ke HDFS
 
-Gunakan perintah `hadoop fs -copyFromLocal` untuk memindahkan file ke HDFS. Contoh untuk file `MsStore.csv`:
+Gunakan command `hadoop fs -copyFromLocal` untuk memindahkan file ke HDFS. Contoh untuk file `MsStore.csv`:
 
 ```bash
 hadoop fs -copyFromLocal MsStore.csv /user/cloudera
@@ -27,7 +27,7 @@ hadoop fs -copyFromLocal MsStore.csv /user/cloudera
 
 ## 🎛️ 4. Buat Database di Hue
 
-Buka **Hue**, lalu buat database dengan perintah berikut:
+Buka **Hue**, lalu buat database dengan command berikut:
 
 ```sql
 CREATE DATABASE mydata;
@@ -71,7 +71,7 @@ Hak akses:
 - **Write** ✍ → `2`
 - **Execute** 🚀 → `1`
 
-Jika ingin memberikan akses penuh (`7 = 4+2+1`), jalankan perintah ini:
+Jika ingin memberikan akses penuh (`7 = 4+2+1`), jalankan command ini:
 
 ```bash
 hadoop fs -chmod -R 777 /user/cloudera
@@ -81,7 +81,7 @@ hadoop fs -chmod -R 777 /user/cloudera
 
 ## 📥 7. Load Data CSV ke Tabel di Hue
 
-Gunakan perintah berikut untuk memasukkan data dari **HDFS** ke tabel **Hue**:
+Gunakan command berikut untuk memasukkan data dari **HDFS** ke tabel **Hue**:
 
 ```sql
 LOAD DATA INPATH '/user/cloudera/MsStore.csv' INTO TABLE msstore;
@@ -91,5 +91,5 @@ Lakukan langkah ini untuk semua tabel yang diperlukan.
 
 ---
 
-🚀 **Selesai!** Data siap digunakan di Cloudera! 🎉
+
 
