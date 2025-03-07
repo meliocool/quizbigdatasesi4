@@ -172,5 +172,5 @@ HAVING COUNT(headertransaction.transactionid) > 5;
 
 ---
 
-🚀 **Selesai!** Data siap untuk dianalisis di Cloudera! 🎉
+🚀 **Selesai!** Semoga nilainya bagus hall yeah hall yeah! 🎉
 
